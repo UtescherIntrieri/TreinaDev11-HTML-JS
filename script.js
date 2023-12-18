@@ -1,3 +1,9 @@
+let resultado = document.getElementById('resultado')
+
+function printData(){
+  resultado.innerHTML = "Pesquisando..."
+}
+
 let contactList = [
   {
     'name' : 'Maria Silva',
