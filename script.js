@@ -1,7 +1,18 @@
-let resultado = document.getElementById('resultado')
+let result = document.getElementById('result')
 
 function printData(){
-  resultado.innerHTML = "Pesquisando..."
+  contactList.forEach(contact => {
+    let li = document.createElement('li')
+    li.innerHTML = `
+    <div>
+      <img width="180" src="${contact.picture}" alt="${contact.name}">
+      <h2>${contact.name}</h2>
+      <span>${contact.email}</span>
+      <p>${contact.city} | ${contact.state}</p>
+      <button>${contact.country}</button>
+    </div>`
+    result.appendChild(li)
+  })
 }
 
 let contactList = [
@@ -20,5 +31,13 @@ let contactList = [
     'state' : 'SP',
     'country' : 'Brasil',
     'picture': 'https://randomuser.me/api/portraits/women/45.jpg'
+  },
+  {
+    'name' : 'Dalva Silva',
+    'email' : 'dalva@gmail.com',
+    'city' : 'São Roque', 
+    'state' : 'SP',
+    'country' : 'Brasil',
+    'picture': 'https://randomuser.me/api/portraits/women/46.jpg'
   },
 ]
