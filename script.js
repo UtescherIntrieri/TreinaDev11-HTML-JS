@@ -1,6 +1,11 @@
 let result = document.getElementById('result')
 
-function printData(){
+async function printData(){
+
+  let res = await fetch('https://randomuser.me/api/?results=5')
+  let data = await res.json()
+  console.log(data.results);
+
   contactList.forEach(contact => {
     let li = document.createElement('li')
     li.innerHTML = `
