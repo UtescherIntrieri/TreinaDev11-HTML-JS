@@ -19,30 +19,3 @@ async function printData(){
     result.appendChild(li)
   })
 }
-
-// let contactList = [
-//   {
-//     'name' : 'Maria Silva',
-//     'email' : 'maria@gmail.com',
-//     'city' : 'Cajamar', 
-//     'state' : 'SP',
-//     'country' : 'Brasil',
-//     'picture': 'https://randomuser.me/api/portraits/women/43.jpg'
-//   },
-//   {
-//     'name' : 'Roberta Silva',
-//     'email' : 'roberta@gmail.com',
-//     'city' : 'São Paulo', 
-//     'state' : 'SP',
-//     'country' : 'Brasil',
-//     'picture': 'https://randomuser.me/api/portraits/women/45.jpg'
-//   },
-//   {
-//     'name' : 'Dalva Silva',
-//     'email' : 'dalva@gmail.com',
-//     'city' : 'São Roque', 
-//     'state' : 'SP',
-//     'country' : 'Brasil',
-//     'picture': 'https://randomuser.me/api/portraits/women/46.jpg'
-//   },
-// ]
